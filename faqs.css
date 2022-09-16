@@ -1,0 +1,217 @@
+*
+{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+*::selection
+{
+	color: #ffffff;
+	background: #000;
+}
+.body
+{
+	background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.8)), url(./H.M\,Images/wallofchina/The-Great-Wall-of-China.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color: #ffff;
+}
+.faqs-h p
+{
+    padding: 10px;
+}
+.card
+{
+    border: none;
+    border-radius: 0;
+}
+.card .card-header span
+{
+    font-size: 25px;
+    cursor: pointer;
+}
+.card .card-header span i
+{
+    background: #000;
+    color: #ffff;
+    padding: 5px;
+    margin-right: 10px;
+}
+.card .card-header p
+{
+    font-size: 18px;
+    margin-top: 7px;
+}
+.footer{
+	line-height: 1.5;
+	background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.8)), url("./H.M\,Images/wallofchina/The-Great-Wall-of-China.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+    padding: 50px 0;
+}
+.footer ul
+{
+	list-style: none;
+}
+.footer .f-heading{
+	-webkit-text-stroke-color: #eee;
+	-webkit-text-stroke-width: 2px;
+	color: transparent;
+	text-transform: uppercase;
+	font-size: 25px;
+	margin-bottom: 35px;
+	position: relative;
+}
+.footer .f-heading::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #ccc;
+	height: 3px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer ul li
+{
+	margin-left: -32px;
+}
+.footer ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer ul li .larger
+{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	font-weight: 600;
+	transition: all 0.3s ease;
+	width: 100px;
+}
+.footer ul li .larger:hover
+{
+	background: #000;
+	color: #ddd;
+	border-radius: 25px;
+	padding-left: 8px;
+}
+.footer ul li .mediums
+{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	font-weight: 600;
+	transition: all 0.3s ease;
+	width: 90px;
+}
+.footer ul li .mediums:hover
+{
+	background: #000;
+	color: #ddd;
+	border-radius: 25px;
+	padding-left: 8px;
+}
+.footer ul li .smalls1
+{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	font-weight: 600;
+	transition: all 0.3s ease;
+	width: 73px;
+}
+.footer ul li .smalls1:hover
+{
+	background: #000;
+	color: #ddd;
+	border-radius: 25px;
+	padding-left: 8px;
+}
+.footer ul li .smalls
+{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	font-weight: 600;
+	transition: all 0.3s ease;
+	width: 65px;
+}
+.footer ul li .smalls:hover
+{
+	background: #000;
+	color: #ddd;
+	border-radius: 25px;
+	padding-left: 8px;
+}
+.footer .social-links li
+{
+	display: block;
+	margin-top: 0px;
+	height: 35px;
+	width: 35px;
+}
+.footer .social-links li .f-icon
+{
+	color: #ffffff;
+	font-size: 175%;
+	border-radius: 50%;
+}
+.footer .social-links li .f-icon:hover
+{
+	background-color: rgb(0, 64, 255);
+}
+.footer .social-links li .t-icon
+{
+	color: #ffffff;
+	font-size: 175%;
+	border-radius: 50%;
+}
+.footer .social-links li .t-icon:hover
+{
+	background-color: rgb(0, 106, 255);
+}
+.footer .social-links li .i-icon
+{
+	color: #ffffff;
+	font-size: 175%;
+	border-radius: 50%;
+}
+.footer .social-links li .i-icon:hover
+{
+	background-color: purple;
+}
+.footer .social-links li .w-icon
+{
+	color: #ffffff;
+	font-size: 175%;
+	border-radius: 50%;
+}
+.footer .social-links li .w-icon:hover
+{
+	background-color: green;
+}
+.footer .copy
+{
+	color: #ffffff;
+	font-size: 18px;
+}
+.footer .copy .team
+{
+	-webkit-text-stroke-color: #eee;
+	-webkit-text-stroke-width: 2px;
+	color: transparent;
+	text-transform: uppercase;
+	font-size: 20px;
+}

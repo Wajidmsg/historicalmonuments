@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" class="form" id="txt1" onkeyup="abc()"></td>
+            </tr>
+
+            <tr>
+                <td>Message</td>
+                <td><textarea id="txt2" cols="30" rows="10" onkeyup="abc()" ></textarea></td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td><button class="btn btn-primary" id="btn1" disabled onclick="alert('Query Submitted');">Send</button></td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        
+        function abc() {
+            
+        if(txt1.value!='' && txt2.value!='')
+        {
+            document.getElementById("btn1").disabled = false;         
+        }
+        else
+        {
+            document.getElementById("btn1").disabled= true;
+        }
+
+        }    
+
+
+
+        
+
+    </script>
+    
+<script src="./js/bootstrap.min.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,120 @@
+::selection
+{
+    background-color: black;
+    color: #fff;
+}
+.para
+{
+    font-size: 22px;
+}
+.img-hm
+{
+    height: 500px;
+    width: 1000px;
+}
+.footer
+{
+    background: #000;
+}
+.footer .box a
+{
+  display: block;
+  font-size: 15px;
+  padding: 3px 7px;
+  color:#fff;
+  text-decoration: none;
+  width: 65px;
+}
+.footer .box1 .span
+{
+  display: block;
+  font-size: 15px;
+  color:#fff;
+  text-decoration: none;
+  width: 75px;
+}
+.footer .box1 .span:hover
+{
+    color: #000;
+    background: #fff;
+    border-radius: 25px;
+}
+.footer .cont a
+{
+  display: block;
+  font-size: 15px;
+  padding: 3px 7px;
+  color:#fff;
+  text-decoration: none;
+  width: 55px;
+}
+.footer .links a
+{
+  display: block;
+  font-size: 15px;
+  padding: 3px 7px;
+  color:#fff;
+  text-decoration: none;
+  width: 105px;
+}
+.footer .box a .facebook
+{
+    color: rgb(0, 102, 255);
+}
+.footer .box a .twitter
+{
+    color: rgb(0, 102, 255);
+}
+.footer .box a .instagram
+{
+    color: rgb(0, 102, 255);
+}
+.footer .box a .linkedin
+{
+    color: rgb(0, 102, 255);
+}
+.footer .box a:hover
+{
+    color: #000;
+    background: #fff;
+    border-radius: 25px;
+    padding: 3px 7px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 475px) {
+    .img-hm
+    {
+        height: 250px;
+        width: 100%;
+        margin-top: 6px;
+    }
+    .dload
+    {
+        margin-bottom: 5px;
+    }
+}
+@media only screen and (min-width: 475px) and (max-width: 767px) {
+    .img-hm
+    {
+        height: 350px;
+        width: 100%;
+        margin-top: 8px;
+    }
+    .dload
+    {
+        margin-bottom: 5px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .img-hm
+    {
+        height: 420px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .dload
+    {
+        margin-bottom: 7px;
+    }
+}

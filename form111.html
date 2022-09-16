@@ -1,0 +1,46 @@
+
+        <form>
+            <div class="input-group">
+                <span class="input-group-text">
+                    <label class="fa-regular fa-address-card form-label" for="validationTextarea" id="basic-addon1"></label>
+                </span>
+                    <input type="text" class="form-control" id="validationTextarea" placeholder="first name" required>
+              <div class="invalid-feedback">
+                Please enter your first name.
+              </div>
+            </div>
+            
+            <div class="input-group my-2">
+                <span class="input-group-text">
+                    <label class="fa-regular fa-address-card form-label" for="validationTextarea" id="basic-addon1"></label>
+                </span>
+                    <input type="text" class="form-control" placeholder="last name" id="name1" onkeyup="form()" pattern="[a-z A-Z]{3,15}" required>
+              <div class="">
+                Please enter your last name.
+              </div>
+            </div>
+    
+            <div class="input-group my-2">
+                <span class="input-group-text">
+                    <label class="fw-bold" for="validationTextarea" id="basic-addon1">@</label>
+                </span>
+                    <input type="email" class="form-control" id="validationTextarea" placeholder="email address" required>
+              <div class="invalid-feedback">
+                Please enter a valid email address.
+              </div>
+            </div>
+    
+            <div class="my-2">
+                <textarea class="form-control" id="validationTextarea enter" onkeyup="form()" rows="7" placeholder="feedback here..." required></textarea>
+                <div class="invalid-feedback">
+                  Please input your feedback.
+                </div>
+            </div>
+            </div>    
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+            <button type="button" id="submitbtn" class="btn btn-outline-success" disabled onclick="alert('Query Submitted');" type="submit" >Submit form</button>
+          </div>
+        </form>
+
+        

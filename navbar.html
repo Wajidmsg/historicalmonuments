@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:wght@200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./imagehover.css-master/css/imagehover.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="./bootstrap js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar-top">
+        <nav class="navbar navbar-expand-xl navbar-light py-3">
+            <div class="container-fluid">
+              <a class="navbar-brand fw-bold" href="#" style="font-size: 35px;">Historical Monuments</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 nav-top ms-auto" style="font-weight: 500; margin-left: 20px;">
+                  <li class="nav-item">
+                    <a class="nav-link active sm" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active md drpdwn" href="#">7 Wonders <i class="fa fa-solid fa-caret-down"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active lg drpdwn" href="#">Historical Monuments <i class="fa fa-solid fa-caret-down"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active sm" href="#">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active md" href="#">History Trip</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active md" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active sm" href="#">F.A.Qs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active md drpdwn" href="#">Contact Us <i class="fa fa-solid fa-caret-down"></i></a>
+                  </li>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+
+    <!-- Dropdown of Nav-items -->
+    <div class="nav-dropdown" id="nav-dropdown">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-7">
+
+
+                    <div class="row">
+                        <a class="navbar-brand mt-5" href="#"><span class="b-btm h2">Monuments</span></a>
+                        <div class="col-4 main-list mt-5">
+                            <div class="row">
+                                <a href="#" class="nav-link" id="Pakistan" onclick="onpak()">In Pakistan</a>
+                            </div>
+                            <div class="row">
+                                <a href="#" class="nav-link" id="North" onclick="onnorth()">In North</a>
+                            </div>
+                            <div class="row">
+                                <a href="#" class="nav-link" id="East" onclick="oneast()">In East</a>
+                            </div>
+                            <div class="row">
+                                <a href="#" class="nav-link" id="West" onclick="onwest()">In West</a>
+                            </div>
+                            <div class="row">
+                                <a href="#" class="nav-link" id="South" onclick="onsouth()">In South</a>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Angle Right Icons -->
+                        <div class="col-2 sub-icons mt-5">
+                            <div class="row">
+                                <i class="fa fa-solid fa-angle-right nav-link fa-2x" id="ang1" style="margin-top: 2px; padding-bottom: 10px; color: #666;"></i>
+                            </div>
+                            <div class="row">
+                                <i class="fa fa-solid fa-angle-right nav-link fa-2x" id="ang2" style="margin-top: 2px; padding-bottom: 8px; color: transparent;"></i>
+                            </div>
+                            <div class="row">
+                                <i class="fa fa-solid fa-angle-right nav-link fa-2x" id="ang3" style="margin-top: 2px; padding-bottom: 8px; color: transparent;"></i>
+                            </div>
+                            <div class="row">
+                                <i class="fa fa-solid fa-angle-right nav-link fa-2x" id="ang4" style="margin-top: 2px; padding-bottom: 10px; color: transparent;"></i>
+                            </div>
+                            <div class="row">
+                                <i class="fa fa-solid fa-angle-right nav-link fa-2x" id="ang5" style="margin-top: 2px; padding-bottom: 8px; color: transparent;"></i>
+                            </div>
+                        </div>
+
+
+                        <!-- Monuments in Pakistan -->
+                        <div class="col-6 paksub mt-5" id="paksub" style="display: block;">
+                            <div class="row">
+                                <a href="#" class="nav-link"><span>MoenjoDaro</span></a>
+                            </div>
+                            <div class="row">
+                                <a href="#" class="nav-link"><span>Sahr-i-Bahlol</span></a>
+                            </div>
+                            <div class="row">
+                                <a href="#" class="nav-link"><span>Taxila</span></a>
+                            </div>
+                            <div class="row">
+                                <a href="#" class="nav-link"><span>Shalamar Garden</span></a>
+                            </div>
+                            <div class="row">
+                                <a href="#" class="nav-link"><span>Monuments at Makli</span></a>
+                            </div>
+                            <div class="row">
+                                <a href="#" class="nav-link"><span>Rohtas Fort</span></a>
+                            </div>
+                        </div>
+
+
+                        <!-- Monuments in North -->
+                        <div class="col-6 northsub mt-4" id="northsub" style="display: none;">
+                            <div class="row">
+                                <div class="col-4"></div>
+                                <div class="col-8">
+                                    <i class="bi bi-x-lg" style="cursor: pointer;" onclick="outnorth()"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <a href="#" class="nav-link"><span>Pakistan</span></a>
+                            </div>
+                        </div>
+
+
+                        <!-- Monuments in East -->
+                        <div class="col-6 eastsub mt-4" id="eastsub" style="display: none;">
+                            <div class="row">
+                                <div class="col-4"></div>
+                                <div class="col-8">
+                                    <i class="bi bi-x-lg" style="cursor: pointer;" onclick="outeast()"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <a href="#" class="nav-link"><span>India</span></a>
+                            </div>
+                        </div>
+
+
+                        <!-- Monuments in West -->
+                        <div class="col-6 westsub mt-4" id="westsub" style="display: none;">
+                            <div class="row">
+                                <div class="col-4"></div>
+                                <div class="col-8">
+                                    <i class="bi bi-x-lg" style="cursor: pointer;" onclick="outwest()"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <a href="#" class="nav-link"><span>India</span></a>
+                            </div>
+                        </div>
+
+
+                        <!-- Monuments in South -->
+                        <div class="col-6 southsub mt-4" id="southsub" style="display: none;">
+                            <div class="row">
+                                <div class="col-4"></div>
+                                <div class="col-8">
+                                    <i class="bi bi-x-lg" style="cursor: pointer;" onclick="outsouth()"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <a href="#" class="nav-link"><span>Southhd</span></a>
+                            </div>
+                            <div class="row">
+                                <a href="#" class="nav-link"><span>Southhd</span></a>
+                            </div>
+                            <div class="row">
+                                <a href="#" class="nav-link"><span>Southhd</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-5">
+                    <div class="dropdown-img-part">
+                        <div class="row">
+                            <div class="col-8"></div>
+                            <div class="col-2 mt-5">
+                                <a href="#" type="button" id="close" class="btn btn-outline-dark">
+                                    <i class="bi bi-x-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col m-auto mt-3">
+                                <div class="nav-img-contain">
+                                    <img src="./H.M,Images/mohenjodaro/mohenjodaro1.jpg" class="img-fluid border border-1 border-dark" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JavaScript Links -->
+    <script src="./bootstrap js/jquery-3.6.0.min.js"></script>
+    <script src="./navbar.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".drpdwn").click(function(){
+          $("#nav-dropdown").slideDown(300)
+        });
+        $("#close").click(function(){
+          $("#nav-dropdown").slideUp(300)
+        });
+      });
+    </script>
+</body>
+</html>

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./bootstrap css/bootstrap.min.css">
+  <link rel="stylesheet" href="./footer.css">
+  <link rel="shortcut icon" href="./H.M,Images/logoi.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+  <style>
+    .brand
+    {
+      text-decoration: none;
+    }
+    .brand .brand-name
+    {
+	    -webkit-text-stroke-color: #000;
+	    -webkit-text-stroke-width: 1px;
+      color: #ffff;
+    }
+    .menulist ul li
+    {
+      list-style-type: none;
+    }
+    .menulist ul li a
+    {
+      text-decoration: none;
+    }
+    .menulist ul li a span
+    {
+      background: #000;
+      color: #ffff;
+    }
+    .sites ul li span:hover
+    {
+      --d: 100%;
+      transition:0.25s;
+    }
+  </style>
+</head>
+<body style="font-family: GeoBrandRegular,CenturyGothic,AppleGothic,Gill Sans,Gill Sans MT,sans-serif;">
+
+  
+  <div class="navbar-top" id="navbar-top">
+    <nav class="navbar navbar-expand-xl navbar-dark py-3">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" id="nav-brand" href="./index.html" style="font-size: 35px;"><img src="./H.M,Images/logoi.png" class="img-fluid ms-3" height="65" width="65"> Historical Monuments</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-solid fa-bars" id="nav-toggler"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 nav-top ms-auto" style="font-weight: 500; margin-left: 20px;">
+              <li class="nav-item">
+                <a class="nav-link active sm" aria-current="page" id="l1" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item gallery-drpdwn">
+                <a class="nav-link dropdown-toggle active sm" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Gallery
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item lg" href="./monumentsgallery.html">Monuments Gallery</a></li>
+                  <li><a class="dropdown-item lg" href="./galleryofseven.html">Gallery of Seven</a></li>
+                </ul>
+              </li>
+              <li class="nav-item wonders-1">
+                <a class="nav-link active md drpdwn1" id="l2" href="#" onclick="onsw1()">7 Wonders <i class="fa fa-solid fa-caret-down"></i></a>
+              </li>
+              <li class="nav-item wonders-2">
+                <a class="nav-link active md" href="./sevenwonders.html">7 Wonders</a>
+              </li>
+              <li class="nav-item dropdown monuments-2">
+                <a class="nav-link lg dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Monuments List
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item md" href="./pakistanmonuments.html">In Pakistan</a></li>
+                  <li><a class="dropdown-item sm" href="./northmonuments.html">In North</a></li>
+                  <li><a class="dropdown-item sm" href="./eastmonuments.html">In East</a></li>
+                  <li><a class="dropdown-item sm" href="./westmonuments.html">In West</a></li>
+                  <li><a class="dropdown-item sm" href="./southmonuments.html">In South</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active lg drpdwn monuments-1" onclick="onpaki()" href="#">Monuments List <i class="fa fa-solid fa-caret-down"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active md" href="./aboutus.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active sm" href="./faqs.html">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active md" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active sm" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Feedback</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+</div>
+<!-- navbar ends -->
+
+<!-- Modals -->
+<!-- Feedback Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content border-0" id="modalfeedback">
+  <div class="modal-header bg-dark">
+    <h5 class="modal-title text-light" id="staticBackdropLabel">Feedback Here</h5>
+    <a href="#" type="button" class="btn btn-outline-light" data-bs-dismiss="modal" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+    </a>
+  </div>
+  <div class="modal-body">
+
+    <div class="container">
+      <form id="frm" method="post"> 
+         <label for="name1" class="mb-1 text-light">Name</label>
+         <input type="text" id="fbname" name="name1" required placeholder="Enter your name">
+
+   <label for="email1" class="my-1 text-light">Email </label>
+         <input type="email" id="email1" name="email1" required placeholder="Enter your email">
+
+  <label id="feedbacktype" class="my-2 text-light">Feedback Type</label>
+
+  <div class="form-check form-check-inline abc">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" checked id="inlineRadio1" value="option1">
+    <label class="form-check-label text-light" for="inlineRadio1">Comment</label>
+  </div>
+  <div class="form-check form-check-inline abc">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+    <label class="form-check-label text-light" for="inlineRadio2">Suggestion</label>
+  </div>
+  <div class="form-check form-check-inline abc">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+    <label class="form-check-label text-light" for="inlineRadio3">Question</label>
+  </div>
+
+   <label for="textarea1" class="my-1 text-light">Describe your Feedback </label>
+      <textarea name="textarea1" id="textarea1" cols="30" rows="5" placeholder="Type your Feedback here..."></textarea>
+
+   <div class="d-grid">
+    <input type="submit" class="btn mt-4" onclick="name111()" value="Submit">
+  </div>
+
+      </form>
+</div>
+
+  </div>
+</div>
+</div>
+</div>
+
+
+<!-- Contact Modal -->
+<div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content border-0" id="modalfeedback">
+  <div class="modal-header bg-dark">
+    <h5 class="modal-title text-light" id="staticBackdropLabel">Contact Us</h5>
+    <a href="#" type="button" class="btn btn-outline-light" data-bs-dismiss="modal" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+    </a>
+  </div>
+  <div class="modal-body">
+
+    <div class="container">
+      <form id="frm1" method="post"> 
+         <label for="name2" class="my-2 text-light">Name</label>
+         <input type="text" id="name2" name="name2" required placeholder="Enter your name">
+
+   <label for="email2" class="my-2 text-light">Email </label>
+         <input type="email" id="email2" name="email2" required placeholder="Enter your email">
+
+   <label for="textarea2" class="my-2 text-light">Message </label>
+   <textarea name="textarea2" id="textarea2" cols="30" rows="5" placeholder="Type your Message here..."></textarea>
+
+   <div class="d-grid">
+    <input type="submit" class="btn mt-4" value="Submit">
+  </div>
+
+      </form>
+</div>
+
+  </div>
+</div>
+</div>
+</div>
+
+
+
+<!-- NavBar DropDown -->
+<div class="nav-dropdown border-top border-1 border-dark" id="nav-dropdown">
+
+
+
+  <!-- Historical Monuments DropDown -->
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-7">
+
+
+              <div class="row">
+                  <a class="navbar-brand mt-5" href="#"><span class="b-btm h2">Monuments</span></a>
+                  <div class="col-4 main-list mt-5">
+                      <div class="row">
+                          <a href="#" class="nav-link" id="Pakistan" onclick="onpak()">In Pakistan</a>
+                      </div>
+                      <div class="row">
+                          <a href="#" class="nav-link" id="North" onclick="onnorth()">In North</a>
+                      </div>
+                      <div class="row">
+                          <a href="#" class="nav-link" id="East" onclick="oneast()">In East</a>
+                      </div>
+                      <div class="row">
+                          <a href="#" class="nav-link" id="West" onclick="onwest()">In West</a>
+                      </div>
+                      <div class="row">
+                          <a href="#" class="nav-link" id="South" onclick="onsouth()">In South</a>
+                      </div>
+                  </div>
+
+
+
+                  <!-- Angle Right Icons -->
+                  <div class="col-2 sub-icons mt-5">
+                      <div class="row">
+                          <i class="fa fa-solid fa-angle-right nav-link fa-2x" id="ang1" style="margin-top: 2px; padding-bottom: 10px; color: #666;"></i>
+                      </div>
+                      <div class="row">
+                          <i class="fa fa-solid fa-angle-right nav-link fa-2x" id="ang2" style="margin-top: 2px; padding-bottom: 8px; color: transparent;"></i>
+                      </div>
+                      <div class="row">
+                          <i class="fa fa-solid fa-angle-right nav-link fa-2x" id="ang3" style="margin-top: 2px; padding-bottom: 8px; color: transparent;"></i>
+                      </div>
+                      <div class="row">
+                          <i class="fa fa-solid fa-angle-right nav-link fa-2x" id="ang4" style="margin-top: 2px; padding-bottom: 10px; color: transparent;"></i>
+                      </div>
+                      <div class="row">
+                          <i class="fa fa-solid fa-angle-right nav-link fa-2x" id="ang5" style="margin-top: 2px; padding-bottom: 8px; color: transparent;"></i>
+                      </div>
+                  </div>
+
+
+                  <!-- Monuments in Pakistan -->
+                  <div class="col-6 paksub mt-5" id="paksub" style="display: block;">
+                      <div class="row">
+                          <a href="./pakistanmonuments.html#moenjodaro" class="nav-link"><span id="pa1" onmouseover="onpa1()">MoenjoDaro</span></a>
+                      </div>
+                      <div class="row">
+                          <a href="./pakistanmonuments.html#takht-i-bahi" class="nav-link"><span id="pa2" onmouseover="onpa2()">Takht-i-Bahi</span></a>
+                      </div>
+                      <div class="row">
+                          <a href="./pakistanmonuments.html#taxila" class="nav-link"><span id="pa3" onmouseover="onpa3()">Taxila</span></a>
+                      </div>
+                      <div class="row">
+                          <a href="./pakistanmonuments.html#shalamar" class="nav-link"><span id="pa4" onmouseover="onpa4()">Shalamar Garden</span></a>
+                      </div>
+                      <div class="row">
+                          <a href="./pakistanmonuments.html#makli" class="nav-link"><span id="pa5" onmouseover="onpa5()">Monuments at Makli</span></a>
+                      </div>
+                      <div class="row">
+                          <a href="./pakistanmonuments.html#makli" class="nav-link"><span id="pa6" onmouseover="onpa6()">Rohtas Fort</span></a>
+                      </div>
+                  </div>
+
+
+                  <!-- Monuments in North -->
+                  <div class="col-6 northsub mt-4" id="northsub" style="display: none;">
+                      <div class="row">
+                          <div class="col-4"></div>
+                          <div class="col-8">
+                              <i class="bi bi-x-lg" style="cursor: pointer;" onclick="outnorth()"></i>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <a href="./northmonuments.html#quirigua" class="nav-link"><span id="nh1" onmouseover="onnh1()">Ruins of Quirigua</span></a>
+                      </div>
+                      <div class="row">
+                          <a href="./northmonuments.html#joya" class="nav-link"><span id="nh2" onmouseover="onnh2()">Joya de Cerén Site</span></a>
+                      </div>
+                      <div class="row">
+                          <a href="./northmonuments.html#turkey" class="nav-link"><span id="nh3" onmouseover="onnh3()">Göbekli Tepe</span></a>
+                      </div>
+                  </div>
+
+
+                  <!-- Monuments in East -->
+                  <div class="col-6 eastsub mt-4" id="eastsub" style="display: none;">
+                      <div class="row">
+                          <div class="col-4"></div>
+                          <div class="col-8">
+                              <i class="bi bi-x-lg" style="cursor: pointer;" onclick="outeast()"></i>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <a href="./eastmonuments.html#icefjord" class="nav-link"><span id="eh1" onmouseover="oneh1()">Ilulissat Icefjord</span></a>
+                      </div>
+                      <div class="row">
+                          <a href="./eastmonuments.html#sarazm" class="nav-link"><span id="eh2" onmouseover="oneh2()">Proto-urban Site of Sarazm</span></a>
+                      </div>
+                  </div>
+
+
+                  <!-- Monuments in West -->
+                  <div class="col-6 westsub mt-4" id="westsub" style="display: none;">
+                      <div class="row">
+                          <div class="col-4"></div>
+                          <div class="col-8">
+                              <i class="bi bi-x-lg" style="cursor: pointer;" onclick="outwest()"></i>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <a href="./westmonuments.html#atlantic" class="nav-link"><span id="wh1" onmouseover="onwh1()">Atlantic Forest</span></a>
+                      </div>
+                      <div class="row">
+                          <a href="./westmonuments.html#rapanui" class="nav-link"><span id="wh2" onmouseover="onwh2()">Rapa Nui National Park</span></a>
+                      </div>
+                  </div>
+
+
+                  <!-- Monuments in South -->
+                  <div class="col-6 southsub mt-4" id="southsub" style="display: none;">
+                      <div class="row">
+                          <div class="col-4"></div>
+                          <div class="col-8">
+                              <i class="bi bi-x-lg" style="cursor: pointer;" onclick="outsouth()"></i>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <a href="./southmonuments.html#stone" class="nav-link"><span id="sh1" onmouseover="onsh1()">Stone Circles of Senegambia</span></a>
+                      </div>
+                      <div class="row">
+                          <a href="./southmonuments.html#los" class="nav-link"><span id="sh2" onmouseover="onsh2()">Los Glaciares National Park</span></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+
+          <div class="col-5">
+              <div class="dropdown-img-part">
+                  <div class="row">
+                      <div class="col-8"></div>
+                      <div class="col-2 mt-5">
+                          <a href="#" type="button" id="close" onclick="dropdownclose()" class="btn btn-outline-dark">
+                              <i class="bi bi-x-lg"></i>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="row mt-5">
+                      <div class="col m-auto mt-3">
+                          <div class="nav-img-contain">
+                            <img src="./H.M,Images/mohenjodaro/mohenjodaro1.jpg" id="moen" class="img-fluid" alt="">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+  
+
+<!-- Seven Wonders DropDown -->
+<div class="nav-dropdown1" id="nav-dropdown1">
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-7">
+
+
+          <div class="row">
+              <a class="navbar-brand1 mt-5" href="#"><span class="b-btm h2">7 Wonders</span></a>
+              <div class="col-12 main-list1 mt-5">
+                  <div class="row">
+                      <a href="#" class="nav-link" id="wallofchina"><span onmouseover="onsw1()">Wall of China</span></a>
+                  </div>
+                  <div class="row">
+                      <a href="#" class="nav-link" id="gizapyramids"><span onmouseover="onsw2()">Pyramids of Giza</span></a>
+                  </div>
+                  <div class="row">
+                      <a href="#" class="nav-link" id="machupichu"><span onmouseover="onsw3()">Machu Picchu</span></a>
+                  </div>
+                  <div class="row">
+                      <a href="#" class="nav-link" id="petra"><span onmouseover="onsw4()">Petra in Jordan</span></a>
+                  </div>
+                  <div class="row">
+                      <a href="#" class="nav-link" id="chichenitza"><span onmouseover="onsw5()">Chichén Itzá</span></a>
+                  </div>
+                  <div class="row">
+                      <a href="#" class="nav-link" id="tajmahal"><span onmouseover="onsw6()">Taj Mahal</span></a>
+                  </div>
+                  <div class="row">
+                      <a href="#" class="nav-link" id="loremipsum"><span onmouseover="onsw7()">The Colosseum</span></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-5">
+          <div class="dropdown-img-part1">
+              <div class="row">
+                  <div class="col-8"></div>
+                  <div class="col-2 mt-5">
+                      <a href="#" type="button" id="close1" class="btn btn-outline-dark">
+                          <i class="bi bi-x-lg"></i>
+                      </a>
+                  </div>
+              </div>
+              <div class="row mt-5">
+                  <div class="col m-auto mt-3">
+                      <div class="nav-img-contain1">
+                          <img src="./H.M,Images/wallofchina/The-Great-Wall-of-China-in-clouds.jpg" id="sw-img" class="img-fluid border border-1 border-dark" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</div>
+</div>
+<!-- NavBar DropDown Ends -->
+
+
+
+
+
+    <div class="container-lg container-fluid">
+      <div class="menulist">
+        <ul>
+          <li>Home</li>
+          <li>Gallery
+            <ul>
+              <li><a href="./monumentsgallery.html"><span> Monuments Gallery</span></a></li>
+              <li><a href="./galleryofseven.html"><span> Gallery of Seven</span></a></li>
+            </ul>
+          </li>
+          <li><a><span>Seven Wonders</span></a></li>
+          <li>Monuments List
+            <ul>
+              <li>In Pakistan</li>
+              <li><a href="./northmonuments.html"><span>In North</span></a></li>
+              <li><a href="./eastmonuments.html"><span>In East</span></a></li>
+              <li><a href="./southmonuments.html"><span>In West</span></a></li>
+              <li><a href="./westmonuments.html"><span>In South</span></a></li>
+            </ul>
+          </li>
+          <li><a><span>About Us</span></a></li>
+          <li><a><span>FAQs</span></a></li>
+          <li><span>Contact Us</span></li>
+          <li><span>Feedback</span></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    
+
+  <footer class="footer">
+    <div class="container-lg container-fluid">
+      <div class="row">
+        <div class="col-6 col-md-3 col-lg-3 text-center">
+       <img src="./H.M,Images/logoi.png" width="180" class="img-fluid" alt="">
+          <p class="display-6 fw-bold f1-heading text-center">Historical Monuments</p>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3">
+          <p class="display-6 fw-bold f-heading">Quick Links</p>
+          <ul>
+         <li><a href="./aboutus.html" class="mediums">About Us</a></li>
+            <li><a href="./sitemap.html" class="mediums">Site Map</a></li>
+            <li><a href="./faqs.html" class="smalls">FAQs</a></li>
+            <li><a href="#" class="mediums" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Feedback</a></li>
+            <li><a href="#" class="mediums" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3">
+          <p class="display-6 fw-bold f-heading">Monuments</p>
+          <ul>
+         <li><a href="./sevenwonders.html" class="larger">7 Wonders</a></li>  	 				
+         <li><a href="./pakistanmonuments.html" class="larger">In Pakistan</a></li>
+         <li><a href="./northmonuments.html" class="mediums">In North</a></li>
+            <li><a href="./eastmonuments.html" class="smalls1">In East</a></li>
+            <li><a href="./westmonuments.html" class="smalls1">In West</a></li>
+            <li><a href="./southmonuments.html" class="mediums">In South</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3">
+          <p class="display-6 fw-bold f-heading">Follow Us</p>
+          <div class="social-links">
+            <li><a href="https://facebook.com"><i class="fa fa-brands fa-facebook f-icon"></i></a></li>
+         <li><a href="https://twitter.com"><i class="fa fa-brands fa-twitter-square t-icon"></i></a></li> 	 				
+         <li><a href="https://instagram.com"><i class="fa fa-brands fa-instagram i-icon"></i></a></li>
+            <li><a href="https://web.whatsapp.com"><i class="fa fa-brands fa-whatsapp w-icon"></i></a></li>  	 			
+       </div>
+        </div>
+      </div>
+ </div>
+   <div class="row copy mt-md-4">
+     <p class="text-center">Designed and Powered by: <span class="fw-bold display-6 team">Team A.W.W</span></p>
+     <p class="text-center">&copy; Copyright and All Rights Reserved by <span class="display-6 fw-bold team">Team A.W.W</span> for 2022-2023.</p>
+   </div>
+ </footer>
+
+
+ <script src="./bootstrap js/jquery-3.6.0.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" ></script>
+ <script src="./index.js"></script>
+</body>
+</html>
+
+
+<!-- <a href="./index.html" class="brand"><p class="display-4 fw-bold text-center brand-name">Historical Monuments</p></a>
+      </div>
+        <div class="row sites">
+            <div class="col-6">
+              <ul>
+                <li><a href="./index.html"><span class="display-6 fw-bold">Home</span></a></li>
+                <li><a href="#"><span class="display-6 fw-bold">Gallery</span></a>
+                  <ul>
+                    <li class="mt-1"><a href="./monumentsgallery.html"><span>Monuments Gallery</span></a></li>
+                    <li><a href="./galleryofseven.html"><span>Gallery of Seven</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="#"><span class="display-6 fw-bold">Seven Wonders</span></a></li>
+                <li><a href="#"><span class="display-6 fw-bold">Historical Monuments</span></a>
+                  <ul>
+                    <li class="mt-1"><a href="./pakistanmonuments.html"><span>In Pakistan</span></a></li>
+                    <li><a href="./northmonuments.html"><span>In North</span></a></li>
+                    <li><a href="./eastmonuments.html"><span>In East</span></a></li>
+                    <li><a href="./southmonuments.html"><span>In West</span></a></li>
+                    <li><a href="./westmonuments.html"><span>In South</span></a></li>
+                  </ul>
+                </li>
+              </ul>
+              </div>
+                <div class="col-6">
+                  <ul>
+                  <li><a href="#"><span class="display-6 fw-bold">About Us</span></a></li>
+                  <li><a href="#"><span class="display-6 fw-bold">Contact Us</span></a>
+                    <ul>
+                      <li class="mt-1"><a href="#"><span>Feedback</span></a></li>
+                      <li><a href="#"><span>Ask Question</span></a></li>
+                      <li><a href="#"><span>Social Links</span></a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#"><span class="display-6 fw-bold">Login</span></a>
+                    <ul>
+                      <li class="mt-1"><a href="#"><span>Login</span></a></li>
+                      <li><a href="#"><span>Become a Member</span></a></li>
+                    </ul>
+                  </li>                  
+                </div>
+              </ul>-->

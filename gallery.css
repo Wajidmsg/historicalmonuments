@@ -1,0 +1,303 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+body
+{
+  color: #000;
+  transition: 0.2s ease;
+  background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.8)), url(./H.M\,Images/mohenjodaro/mohenjodaro1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.heading
+{
+  /* background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.8)), url(./H.M\,Images/mohenjodaro/mohenjodaro1.jpg); */
+}
+.heading p
+{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: #fff;
+    -webkit-text-stroke-width: 2px;
+    letter-spacing: 12px;
+    font-weight: 700;
+}
+.pakimages .card
+{
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.pakimages .card:hover
+{
+  border-top:  solid #fff;
+  transition: 0.5s ease;
+  
+}
+.pakimages .card .card-body .img-container
+{
+  overflow: hidden;
+  border: 1px solid ;
+  transition: 1s ease;
+  height: 200px;
+}
+.pakimages .card .card-body p
+{
+  margin-bottom: 20px;
+}
+.pakimages .card .card-body img
+{
+  transition: 1.5s ease;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+.pakimages .card .card-footer .d-grid a
+{
+  background: #111;
+  border: 1px solid transparent;
+  border-radius: 0%;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+
+
+
+.northimages .card
+{
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.northimages .card:hover
+{
+  border-top:  solid #fff;
+  transition: 0.5s ease;
+  
+}
+.northimages .card .card-body .img-container
+{
+  overflow: hidden;
+  border: 1px solid ;
+  transition: 1s ease;
+  height: 200px;
+}
+.northimages .card .card-body p
+{
+  margin-bottom: 20px;
+}
+.northimages .card .card-body img
+{
+  transition: 1.5s ease;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+.northimages .card .card-footer .d-grid a
+{
+  background: #111;
+  border: 1px solid transparent;
+  border-radius: 0%;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+
+
+
+
+
+.eastimages .card
+{
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.eastimages .card:hover
+{
+  border-top:  solid #fff;
+  transition: 0.5s ease;
+  
+}
+.eastimages .card .card-body .img-container
+{
+  overflow: hidden;
+  border: 1px solid ;
+  transition: 1s ease;
+  height: 200px;
+}
+.eastimages .card .card-body p
+{
+  margin-bottom: 20px;
+}
+.eastimages .card .card-body img
+{
+  transition: 1.5s ease;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+.eastimages .card .card-footer .d-grid a
+{
+  background: #111;
+  border: 1px solid transparent;
+  border-radius: 0%;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+
+
+
+
+
+.westimages .card
+{
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.westimages .card:hover
+{
+  border-top:  solid #fff;
+  transition: 0.5s ease;
+  
+}
+.westimages .card .card-body .img-container
+{
+  overflow: hidden;
+  border: 1px solid ;
+  transition: 1s ease;
+  height: 200px;
+}
+.westimages .card .card-body p
+{
+  margin-bottom: 20px;
+}
+.westimages .card .card-body img
+{
+  transition: 1.5s ease;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+.westimages .card .card-footer .d-grid a
+{
+  background: #111;
+  border: 1px solid transparent;
+  border-radius: 0%;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+
+
+
+
+
+.southimages .card
+{
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.southimages .card:hover
+{
+  border-top:  solid #fff;
+  transition: 0.5s ease;
+  
+}
+.southimages .card .card-body .img-container
+{
+  overflow: hidden;
+  border: 1px solid ;
+  transition: 1s ease;
+  height: 200px;
+}
+.southimages .card .card-body p
+{
+  margin-bottom: 20px;
+}
+.southimages .card .card-body img
+{
+  transition: 1.5s ease;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+.southimages .card .card-footer .d-grid a
+{
+  background: #111;
+  border: 1px solid transparent;
+  border-radius: 0%;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+
+
+.modal .modal-body .ang-right
+{
+  padding-top: 110px;
+  font-size: 300%;
+  color: #555;
+  cursor: pointer;
+}
+.modal .modal-body .ang-left:hover
+{
+  color: #000;
+}
+.modal .modal-body .ang-left
+{
+  padding-top: 110px;
+  font-size: 300%;
+  color: #555;
+  cursor: pointer;
+}
+.modal .modal-body img
+{
+  height: 250px;
+  width: 100%;
+  transition: 0.5s;
+}
+.modal .modal-body img:hover
+{
+  transform: scale(1.03);
+  transition: 0.5s;
+}
+.modal .modal-body .ang-right:hover
+{
+  color: #000;
+}
+.modal .modal-footer a
+{
+  font-weight: 500;
+  color: #000;
+}
+.modal .modal-footer a:hover
+{
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+}
+
+
+
+@media only screen and (max-width: 991px)
+{
+  /* body
+  {
+    height: 175vh;
+  } */
+}
+@media only screen and (max-width: 767px)
+{
+  /* body
+  {
+    height: 175vh;
+  } */
+}

@@ -1,0 +1,129 @@
+function onpak()
+{
+    document.getElementById("ang1").style.color="#666"
+    document.getElementById("paksub").style.display="block"
+    document.getElementById("northsub").style.display="none"
+    document.getElementById("southsub").style.display="none"
+    document.getElementById("eastsub").style.display="none"
+    document.getElementById("westsub").style.display="none"
+    document.getElementById("ang2").style.color="transparent"
+    document.getElementById("ang3").style.color="transparent"
+    document.getElementById("ang4").style.color="transparent"
+    document.getElementById("ang5").style.color="transparent"
+    document.getElementById("Pakistan").style.fontWeight="600"
+    document.getElementById("North").style.fontWeight=""
+    document.getElementById("East").style.fontWeight=""
+    document.getElementById("West").style.fontWeight=""
+    document.getElementById("South").style.fontWeight=""
+}
+function onnorth()
+{
+    document.getElementById("ang2").style.color="#666"
+    document.getElementById("northsub").style.display="block"
+    document.getElementById("southsub").style.display="none"
+    document.getElementById("eastsub").style.display="none"
+    document.getElementById("westsub").style.display="none"
+    document.getElementById("paksub").style.display="none"
+    document.getElementById("ang1").style.color="transparent"
+    document.getElementById("ang3").style.color="transparent"
+    document.getElementById("ang4").style.color="transparent"
+    document.getElementById("ang5").style.color="transparent"
+    document.getElementById("Pakistan").style.fontWeight="normal"
+    document.getElementById("North").style.fontWeight="600"
+    document.getElementById("East").style.fontWeight=""
+    document.getElementById("West").style.fontWeight=""
+    document.getElementById("South").style.fontWeight=""
+}
+function outnorth()
+{
+    document.getElementById("ang2").style.color="transparent"
+    document.getElementById("northsub").style.display="none"
+    document.getElementById("ang1").style.color="#666"
+    document.getElementById("paksub").style.display="block"
+    document.getElementById("North").style.fontWeight=""
+    document.getElementById("Pakistan").style.fontWeight="600"
+}
+function oneast()
+{
+    document.getElementById("ang3").style.color="#666"
+    document.getElementById("eastsub").style.display="block"
+    document.getElementById("ang1").style.color="transparent"
+    document.getElementById("paksub").style.display="none"
+    document.getElementById("northsub").style.display="none"
+    document.getElementById("southsub").style.display="none"
+    document.getElementById("westsub").style.display="none"
+    document.getElementById("ang1").style.color="transparent"
+    document.getElementById("ang2").style.color="transparent"
+    document.getElementById("ang4").style.color="transparent"
+    document.getElementById("ang5").style.color="transparent"
+    document.getElementById("Pakistan").style.fontWeight="normal"
+    document.getElementById("North").style.fontWeight=""
+    document.getElementById("East").style.fontWeight="600"
+    document.getElementById("West").style.fontWeight=""
+    document.getElementById("South").style.fontWeight=""
+}
+function outeast()
+{
+    document.getElementById("ang3").style.color="transparent"
+    document.getElementById("eastsub").style.display="none"
+    document.getElementById("ang1").style.color="#666"
+    document.getElementById("paksub").style.display="block"
+    document.getElementById("East").style.fontWeight=""
+    document.getElementById("Pakistan").style.fontWeight="600"
+}
+function onwest()
+{
+    document.getElementById("ang4").style.color="#666"
+    document.getElementById("westsub").style.display="block"
+    document.getElementById("ang1").style.color="transparent"
+    document.getElementById("paksub").style.display="none"
+    document.getElementById("northsub").style.display="none"
+    document.getElementById("eastsub").style.display="none"
+    document.getElementById("southsub").style.display="none"
+    document.getElementById("ang1").style.color="transparent"
+    document.getElementById("ang3").style.color="transparent"
+    document.getElementById("ang2").style.color="transparent"
+    document.getElementById("ang5").style.color="transparent"
+    document.getElementById("Pakistan").style.fontWeight="normal"
+    document.getElementById("North").style.fontWeight=""
+    document.getElementById("East").style.fontWeight=""
+    document.getElementById("West").style.fontWeight="600"
+    document.getElementById("South").style.fontWeight=""
+}
+function outwest()
+{
+    document.getElementById("ang4").style.color="transparent"
+    document.getElementById("westsub").style.display="none"
+    document.getElementById("ang1").style.color="#666"
+    document.getElementById("paksub").style.display="block"
+    document.getElementById("West").style.fontWeight=""
+    document.getElementById("Pakistan").style.fontWeight="600"
+}
+function onsouth()
+{
+    document.getElementById("ang5").style.color="#666"
+    document.getElementById("southsub").style.display="block"
+    document.getElementById("ang1").style.color="transparent"
+    document.getElementById("paksub").style.display="none"
+    document.getElementById("northsub").style.display="none"
+    document.getElementById("eastsub").style.display="none"
+    document.getElementById("westsub").style.display="none"
+    document.getElementById("ang1").style.color="transparent"
+    document.getElementById("ang3").style.color="transparent"
+    document.getElementById("ang4").style.color="transparent"
+    document.getElementById("ang2").style.color="transparent"
+    document.getElementById("Pakistan").style.fontWeight="normal"
+    document.getElementById("North").style.fontWeight=""
+    document.getElementById("East").style.fontWeight=""
+    document.getElementById("West").style.fontWeight=""
+    document.getElementById("South").style.fontWeight="600"
+}
+function outsouth()
+{
+    document.getElementById("ang5").style.color="transparent"
+    document.getElementById("southsub").style.display="none"
+    document.getElementById("ang1").style.color="#666"
+    document.getElementById("paksub").style.display="block"
+    document.getElementById("South").style.fontWeight=""
+    document.getElementById("Pakistan").style.fontWeight="600"
+}

@@ -1,0 +1,178 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    transition: 0.2s ease;
+}
+.navbar-top .navbar
+{
+    background: transparent;
+}
+.navbar-top .navbar-brand
+{
+    font-family: 'Pittsbrook Outline';
+    width: 350px;
+    transition: .2s ease;
+}
+.navbar-top .navbar-brand:hover
+{
+    transform: scale(1.009);
+    color: rgb(230, 225, 225);
+    transition: .3s ease;
+}
+.nav-top .nav-item .nav-link
+{
+    margin-left: 10px;
+    border-radius: 25px;
+    margin-right: 1px;
+    padding: 3px 7px;
+    color: #fff;
+    border: 2px solid transparent;
+    transition: .3s ease;
+}
+.nav-top .nav-item .nav-link:hover
+{
+    color: #fff;
+    background: black;
+    border: 2px dotted #fff;
+    transition: .3s ease;
+    border-radius: 25px;
+    padding: 3px 7px;
+}
+.nav-dropdown
+{
+    height: 85.6vh;
+    width: 100%;
+    color: #000;
+    background: #fff;   
+    /* background: rgba(0, 0, 0, 0.072); */
+    display: none;
+    /* position: relative; */
+}
+.nav-dropdown .navbar-brand
+{
+    color: #000;
+}
+.nav-dropdown .navbar-brand .b-btm
+{
+    border-bottom: 2px solid;
+}
+.nav-dropdown .main-list .nav-link
+{
+    text-decoration: none;
+    color: #000;
+    font-size: 23px;
+}
+.nav-dropdown .main-list .nav-link:hover
+{
+    font-weight: 600;
+}
+.nav-dropdown .main-list #Pakistan
+{
+    font-weight: 600;
+}
+.nav-dropdown .sub-icons .nav-link
+{
+    color: #000;
+}
+.nav-dropdown .sub-ul nav
+{
+    width: 150px;
+    height: 100%;
+    margin-left: 350px;
+    margin-top: -205px;
+}
+.nav-dropdown .paksub .nav-link span
+{
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    background: linear-gradient(currentColor 0 0) bottom /var(--d, 0) 1px no-repeat;
+    transition:0.2s;
+}
+.nav-dropdown .paksub .nav-link span:hover
+{
+    font-weight: normal;
+    --d: 100%;
+}
+.nav-dropdown .northsub .nav-link span
+{
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    background: linear-gradient(currentColor 0 0) bottom /var(--d, 0) 1px no-repeat;
+    transition:0.2s;
+}
+.nav-dropdown .northsub .nav-link span:hover
+{
+    font-weight: normal;
+    --d: 100%;
+}
+.nav-dropdown .eastsub .nav-link span
+{
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    background: linear-gradient(currentColor 0 0) bottom /var(--d, 0) 1px no-repeat;
+    transition:0.2s;
+}
+.nav-dropdown .eastsub .nav-link span:hover
+{
+    font-weight: normal;
+    --d: 100%;
+}
+.nav-dropdown .westsub .nav-link span
+{
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    background: linear-gradient(currentColor 0 0) bottom /var(--d, 0) 1px no-repeat;
+    transition:0.2s;
+}
+.nav-dropdown .westsub .nav-link span:hover
+{
+    font-weight: normal;
+    --d: 100%;
+}
+.nav-dropdown .southsub .nav-link span
+{
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    background: linear-gradient(currentColor 0 0) bottom /var(--d, 0) 1px no-repeat;
+    transition:0.2s;
+}
+.nav-dropdown .southsub .nav-link span:hover
+{
+    font-weight: normal;
+    --d: 100%;
+}
+.nav-dropdown .dropdown-img-part .nav-img-contain
+{
+    box-sizing: border-box;
+}
+.nav-dropdown .dropdown-img-part .nav-img-contain img
+{
+    height: 280px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+
+
+/* MediaQueries */
+@media screen and (max-width: 1199px) {
+    .nav-top .nav-item .sm
+    {
+        width: 75px;
+    }.nav-top .nav-item .md
+    {
+        width: 115px;
+    }.nav-top .nav-item .lg
+    {
+        width: 200px;
+    }
+}
